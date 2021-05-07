@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Twitter Sentiment Analysis</title>
+        
+    <body>
+        
+            <h1><center>Analisis Sentimen Twitter</center></h1>
+            <center><a href="/"><img src="{{ url_for('static', filename='logo.png') }}" class="avatar"></a></center>
+            <form method="post" name="Userinput" id="Userinput" action="/sentiment">
+                <center><p>Id User</p></center>
+                <center><input type="text" name="userid" placeholder="Id User tanpa @"></center>
+                <center><p>HashTag</p></center>
+                <center><input type="text" name="hashtag" placeholder="hashtag dengan #"></center>
+                <h2>
+                <center><button type="kirim" class="btn btn-light btn-outline-success" id="sendMessageButton">Hasil Analisis</button></center></h2>
+                <br>
+                <a href="/"><h6 style="color: rgb(1, 2, 1)" >{{ error }}</h6></a>
+                
+
+            </form>  
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Twitter Sentiment Analysis of {{ name }} </title>
+    
+    </head>
+    <body>
+        <center><a href="/"><img src="{{ url_for('static', filename='logo.png') }}" ></a></center>
+    <center> <h1>Hasil Analisis</h1></center>
+
+            <center><p style="color: #c2d54b">Positive: {{ positive }} %</p></center>
+            
+            <center><p style="color: rgba(255, 0, 208, 0.558)">Negative: {{ negative }} %</p></center>
+            
+            <center><p style="color: #0037ff">Neutral: {{ neutral }} %</p></center>
+            <br>
+            <center><a href="/"><button class="btn btn-light btn-outline-success" id="sendMessageButton">&#8592; Kembali ke beranda</button></a>
+            </center>
+            
+        </div>
+
+    </body>
+</html>
